@@ -1,0 +1,13 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+}
+
+header {
+  background: #cccccc;
+  margin-top: 0px;
+}
+.encriptado {
+  width: 940px;
+  background: lightblue;
+}
