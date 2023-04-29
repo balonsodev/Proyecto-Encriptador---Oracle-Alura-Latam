@@ -1,29 +1,28 @@
-var output = " ";
-var input = "la casa de mi mama";
-var inputCoded = "lai caisai denter mimes maimai";
+//var output = " ";
+const textoPrueba = "la casa";
 
 function encrypt() {
-  //let input = document.getElementById(inputText.value);
-
-  let inputToCode = input
+  var textoI = document.getElementById("inputText").value;
+  let inputToCode = textoI
     .replace(/e/gi, "enter")
     .replace(/i/gi, "imes")
     .replace(/a/gi, "ai")
-    .replace(/o/gi, "over")
+    .replace(/o/gi, "ober")
     .replace(/u/gi, "ufat");
   console.log(inputToCode);
+  document.getElementById("textoEncriptado").innerHTML = inputToCode;
 }
 
 function decrypt() {
-  //let input = document.getElementById(inputText.value);
+  let input = document.getElementById("inputText").value;
 
-  let inputToDecode = inputCoded
-    .replace(/enter/gi, "e")
-    .replace(/imes/gi, "i")
-    .replace(/ai/gi, "a")
-    .replace(/over/gi, "o")
-    .replace(/ufat/gi, "u");
-  console.log(inputToDecode);
+  let inputToDecode = input
+    .replace(/enter/g, "e")
+    .replace(/imes/g, "i")
+    .replace(/ai/g, "a")
+    .replace(/ober/g, "o")
+    .replace(/ufat/g, "u");
+  document.getElementById("outputText").innerHTML = inputToDecode;
 }
-encrypt(input);
-decrypt(inputCoded);
+
+//decrypt(inputCoded);
