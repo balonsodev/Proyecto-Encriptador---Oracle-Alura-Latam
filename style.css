@@ -7,14 +7,21 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
-  background-image: url("/images/background.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background-image: url(/images/background.jpg);
 }
-
+#background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 header {
-  background: #cccccc;
+  /* background: #cccccc; */
   margin-top: 0px;
 }
 h3 {
@@ -23,6 +30,9 @@ h3 {
   display: block;
   align-items: center;
 }
+/* .background {
+  background-image: url(/images/background.jpg);
+} */
 .titulo-principal {
   text-align: center;
   font-size: 33px;
@@ -56,12 +66,12 @@ div .left {
 
 div .right {
   background: #ffffff;
-  margin: 20px 0 0 200px;
+  margin: 10px 0 0 200px;
   border: 2px solid black;
   border-radius: 32px;
   padding: 10px;
   width: 400px;
-  height: 944px;
+  height: 920px;
   vertical-align: top;
   box-shadow: 0 24px 32px -8px black;
   display: inline-block;
@@ -75,11 +85,12 @@ div .right {
   text-align: justify;
   border: none;
   font-style: normal;
+  vertical-align: top;
 }
 
 .outputText {
   width: 400px;
-  height: 920px;
+  height: 900px;
   display: block;
   font-size: 22px;
   text-align: justify;
@@ -231,4 +242,65 @@ h1 {
 
 .btn-linkedin > span {
   background: #007bb6;
+}
+
+/* A partir de este punto CSS de Responsividad */
+
+@media screen and (max-width: 480px) {
+  .titulo-input,
+  .titulo-principal,
+  .titulo-resultado .right > label {
+    text-align: center;
+  }
+
+  .encriptado,
+  .titulo-principal p,
+  div.left,
+  div.right,
+  .inputText,
+  .outputText {
+    width: 390px;
+    transform: scale(0.9);
+    display: block;
+    height: 450px;
+    margin: auto;
+    padding: 0;
+  }
+  .encriptador-lista,
+  .encriptacion {
+    margin-left: 0;
+    width: 370px;
+    margin-bottom: 20px;
+    display: inline-table;
+    padding: 0;
+  }
+  .encriptador-lista {
+    height: 940px;
+  }
+  .minusculas {
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .inputText {
+    width: 100%;
+    height: 85%;
+  }
+
+  .outputText {
+    transform: scale(0.95);
+    height: 418px;
+  }
+  .botones,
+  .boton-codificar,
+  .boton-desencriptar {
+    margin: 10px;
+  }
+  .botones {
+    margin-inline: auto;
+    text-align: center;
+  }
+  #social-platforms {
+    position: static;
+  }
 }
