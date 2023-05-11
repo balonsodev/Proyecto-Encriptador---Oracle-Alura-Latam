@@ -10,7 +10,7 @@ function encrypt() {
     .replace(/o/gi, "ober")
     .replace(/u/gi, "ufat");
   console.log(inputToCode);
-  document.getElementById("textoEncriptado").innerHTML = inputToCode;
+  document.getElementById("outputText").innerHTML = inputToCode;
 }
 
 function decrypt() {

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,33 +10,26 @@
     
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    
-  </head>
-    
-  <body>
+</head>
+
+<body>
+
+  <script src="./script.js"></script>
+  <title>Challenge Encriptador</title>
       
-      
-      
-      <script src="./script.js"></script>
-      <title>Challenge Encriptador</title>
-      
-      <!-- Background -->
-      <!-- Background End-->
-      <header>
+    <header>
         
-      </header>
-      <section class="encriptado">
+    </header>
+    <section class="encriptado">
         
-        <h3 class="titulo-principal">Excriptador de Mensajes</h3>
+      <h3 class="titulo-principal">Excriptador de Mensajes</h3>
         
       
       <div class="encriptacion">
-        <div class="encriptador-lista">
-          <div class="left">
+        <div class="contenedor-cuadros">
+          <div class="cuadro left">
             <label class="titulo-input" for="texto">Texto a Encriptar</label>
             <input
             type="text"  
@@ -48,9 +41,9 @@
                 class="inputText"
                 required
                 ></textarea>
-              </div>
+          </div>
               
-              <div class="right">
+          <div class="cuadro right">
                 <label class="titulo-resultado" for="textoEncriptado">Resultado</label>
                 <textarea
                 name="textoEncriptado"
@@ -62,32 +55,25 @@
                 readonly
                 
                 ></textarea>
-              </div>
-            </div>
-            <div class="botones">
-              <p class="minusculas">El texto solo debe incluir letras minúsculas y sin acentos</p>
-              <button id="encrypt" class="boton-codificar" onclick="encrypt()">Encriptar</button>
+          </div>
+        </div>
+        <div class="botones">
+          <p class="minusculas"> &#10071 El texto ingresado, debe incluir solo letras minúsculas e ir sin acentos</p>
+            <button id="encrypt" class="boton-codificar" onclick="encrypt()">Encriptar</button>
               
-              <button id="decrypt" class="boton-desencriptar" onclick="decrypt()">Desencriptar</button>
-            </div>
-          </div>
-          
-          <div id="social-platforms">
-            <h1>Social Buttons with Icon Fonts</h1>
-            
-            <a class="btn btn-icon btn-facebook" href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a>
-            <a class="btn btn-icon btn-github" href="#"><i class="fa fa-github"></i><span>Github</span></a>
-          
-            <a class="btn btn-icon btn-linkedin" href="#"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
-          </div>
-        
-  </body>
-  <footer>
-
-        
+            <button id="decrypt" class="boton-desencriptar" onclick="decrypt()">Desencriptar</button>
+        </div>
+      </div>
+    <footer>
+      <section class= "contenedor-redes">
+        <div id="social-platforms">
+          <h1>Challenge Oracle Next Education 2023.    &copy Copyright Luis Bryan Alonso Gamboa 2023</h1>
+          <a class="btn btn-icon btn-facebook" href="https://www.facebook.com/luis.b.alonso.9"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+          <a class="btn btn-icon btn-github" href="https://github.com/balonsodev"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a>
+          <a class="btn btn-icon btn-linkedin" href="https://www.linkedin.com/in/luis-bryan-alonso/"><i class="fa fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+        </div>  
       
-      
-      
-      
+      </section>
     </footer>
-</html>
+  </body>
+</html>                                               
