@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./Decrypter Challenge/images/Logo.png" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon_package_v0.16/favicon.ico" type="image/x-icon" />
     
     
     
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
     <title> Challenge Encriptador</title>
-    <link rel="icon" type="image/x-icon" href="./images/Logo.png" width="20px">
+    <link rel="icon" type="image/x-icon" href="./images/Logo.png" >
 </head>
 
 <body>
@@ -20,62 +20,62 @@
   <script src="./script.js"></script>
   
   <header>
-    
+   <h3 class="principal-title" ><img src="./images/Logo.png" alt="Logo de Alura">Excriptador de Mensajes</h3>
+   
   </header>
-    <section class="encriptado">
-  <head>
+  
+  <main>
 
-    <h3 class="principal-title" ><img src="./images/Logo.png" alt="Logo de Alura">Excriptador de Mensajes</h3>
-    
-  </head>
-      
-      <div class="encriptacion">
-        <div class="box-container">
-          <div class="box-left">
-            <label class="input-title" for="texto">Texto a Encriptar</label>
-            <input
-            type="text"  
-            name="texto"
-            id="inputText"
+   <section class="encriptado">
+    <div class="encriptacion">
+     <div class="box-container">
+      <div class="box-left">
+       <label class="input-title" for="texto">Texto a Encriptar</label>
+       <input
+       type="text"  
+       name="texto"
+       id="inputText"
             placeholder="incluir el texto aqui "
             cols= "70"
             rows= "30"
             class="inputText"
             required
-                ></textarea>
-          </div>
-              
-          <div class="box-right">
-                <label class="result-title" for="textoEncriptado">Resultado</label>
-                <textarea
-                name="textoEncriptado"
-                id="outputText"
-                placeholder="texto resultado "
-                cols="40"
-                rows="10"
-                class="outputText"
-                readonly
-                
-                ></textarea>
-          </div>
+            ></textarea>
+           </div>
+           
+           <div class="box-right">
+            <label class="result-title" for="textoEncriptado">Resultado</label>
+            <textarea
+            name="textoEncriptado"
+            id="outputText"
+            placeholder="texto resultado "
+            cols="30"
+            rows="10"
+            class="outputText"
+            readonly
+            
+            ></textarea>
+            <button id="btn-copy" class="btn-copiar" onclick="decrypt()">Copiar</button>
+           </div>
         </div>
         <div class="botones">
           <p class="minusculas"> &#10071 El texto ingresado, debe incluir solo letras minúsculas e ir sin acentos</p>
-            <button id="encrypt" class="boton-codificar" onclick="encrypt()">Encriptar</button>
+          <button id="encrypt" class="boton-codificar" onclick="encrypt()">Encriptar</button>
               
-            <button id="decrypt" class="boton-desencriptar" onclick="decrypt()">Desencriptar</button>
+          <button id="decrypt" class="boton-desencriptar" onclick="decrypt()">Desencriptar</button>
+         </div>
         </div>
-      </div>
-    </body>
-  <footer>
-    <section class= "social-container">
-      <div id="social-platforms">
-        <h1>Challenge Oracle Next Education 2023.    &copy Copyright Luis Bryan Alonso Gamboa 2023</h1>
-        <a class="btn btn-icon btn-facebook" href="https://www.facebook.com/luis.b.alonso.9"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
-        <a class="btn btn-icon btn-github" href="https://github.com/balonsodev"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a>
-        <a class="btn btn-icon btn-linkedin" href="https://www.linkedin.com/in/luis-bryan-alonso/"><i class="fa fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
-        </div>  
-      
-    </section>
-  </footer>
+   </main>  
+</body>
+<footer>
+ <section class= "social-container">
+  <div id="social-platforms">
+   <h1>Challenge Oracle Next Education 2023.    &copy Copyright Luis Bryan Alonso Gamboa 2023</h1>
+   <a class="btn btn-icon btn-facebook" href="https://www.facebook.com/luis.b.alonso.9"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+   <a class="btn btn-icon btn-github" href="https://github.com/balonsodev"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a>
+   <a class="btn btn-icon btn-linkedin" href="https://www.linkedin.com/in/luis-bryan-alonso/"><i class="fa fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+  </div>  
+     
+ </section>
+</footer>
 </html>
