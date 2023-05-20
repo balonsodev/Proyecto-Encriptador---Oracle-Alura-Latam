@@ -1,16 +1,16 @@
-//var output = " ";
-const textoPrueba = "la casa";
+function copyToClipboard() {
+  var resultField = document.getElementById("outputText");
+  resultField.select();
+  document.execCommand("copy");
+  //mostrarImagen();
+  resultField.value = "";
 
-function verification() {
-  const regex = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-  if (regex.test(textoI)) {
-    return encrypt(textoI);
-  } else {
-    return alert("Por favor ingrese un texto en minusculas y sin acentos");
-  }
+  alert("El texto ha sido incluido al portapapeles");
 }
+
 function encrypt() {
   var textoI = document.getElementById("inputText").value;
+  textoI = textoI.toLowerCase();
   let inputToCode = textoI
     .replace(/e/gi, "enter")
     .replace(/i/gi, "imes")
@@ -18,12 +18,12 @@ function encrypt() {
     .replace(/o/gi, "ober")
     .replace(/u/gi, "ufat");
   document.getElementById("outputText").innerHTML = inputToCode;
-  cle;
+  textoI = "";
 }
 
 function decrypt() {
   let input = document.getElementById("inputText").value;
-
+  input = input.toLowerCase();
   let inputToDecode = input
     .replace(/enter/g, "e")
     .replace(/imes/g, "i")
@@ -32,6 +32,5 @@ function decrypt() {
     .replace(/ufat/g, "u");
   console.log(inputToDecode);
   document.getElementById("outputText").innerHTML = inputToDecode;
+  input = "";
 }
-
-//decrypt(inputCoded);
