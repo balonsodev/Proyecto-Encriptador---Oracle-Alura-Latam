@@ -2,6 +2,8 @@ function copyToClipboard() {
   var resultField = document.getElementById("outputText");
   resultField.select();
   document.execCommand("copy");
+  resultField.value = "";
+
   alert("El texto ha sido incluido al portapapeles");
   resultField = "";
 }
@@ -36,5 +38,30 @@ function decrypt() {
   resultado(inputToDecode);
   //document.getElementById("outputText").innerHTML = inputToDecode;
   input = "";
-  inputToDecode = "";
 }
+/* function mostrarTexto() {
+  $("#encription-not-found").addClass("hidden");
+  $("#encription-found").removeClass("hidden");
+}
+
+function mostrarImagen() {
+  $("#encription-found").addClass("hidden");
+  $("#encription-not-found").removeClass("hidden");
+}
+function procesoEncriptar() {
+  // SI el input area esta vacio mostramos al perrito
+  var textoAEncriptar = document.getElementById("inputText");
+  if (textoAEncriptar.value == "") {
+    mostrarImagen();
+    swal("Ingresa un texto :)");
+    return;
+  } else {
+    mostrarTexto();
+  }
+
+  var textoEncriptado = encriptar(textoAEncriptar.value);
+  var resultadoTextArea = document.getElementById("resultado");
+  resultadoTextArea.value = textoEncriptado;
+  textoAEncriptar.value = "";
+}
+ */
