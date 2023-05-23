@@ -1,8 +1,7 @@
-# Proyecto Encriptador 
+# **Proyecto Encriptador**
+Este folder contiene mi proyecto de encriptador realizado por mi persona, como practica. Se encuentra publicado en la siguiente url: https://balonsodev.github.io/Proyecto-Encriptador---Oracle-Alura-Latam/
 
-Este folder contiene mi proyecto de "Encriptador de Texto" realizado por mi persona, como proyecto para el Entrenamiento realizado con Oracle/Alura Latam despues de haber concluido los cursos de HTML, CSS y Git/Github, en su programa "Proyect One". Actualmente se encuentra publicado en la siguiente url: https://balonsodev.github.io/Proyecto-Encriptador---Oracle-Alura-Latam/
-
-##  Informacion sobre este proyecto: 
+## 🔒 Informacion sobre este proyecto: 
 
 Este Proyecto consiste en una aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que conozcan las "llaves" de la encriptación utilizada.
 
@@ -14,14 +13,14 @@ Este Proyecto consiste en una aplicación que encripta textos, así podrás inte
 - La letra "o" es convertida para "ober". 
 - La letra "u" es convertida para "ufat".
 
- 👉 Como funciona este encriptador:👈
+ 👈 Otras consideraciones importantes:
 - Funciona solo con letras minúsculas (No es case sensitive)
 - No deben ser utilizados letras con acentos ni caracteres especiales
 - Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
 Por ejemplo:
 "perro" => "penterrrober" y "penterrrober" => "perro"
 
-👉 La página cuenta con un campo para inserción del texto que será encriptado o desencriptado, y el usuario puede escoger entre las dos opciones.
+La página cuenta con un campo para inserción del texto que será encriptado o desencriptado, y el usuario puede escoger entre las dos opciones.
 El resultado es mostrado en la pantalla.
 
-👌 Contiene un botón que copia el texto encriptado/desencriptado para la sección deresultado, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+👌Contiene un botón que copia el texto encriptado/desencriptado para la sección deresultado, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
