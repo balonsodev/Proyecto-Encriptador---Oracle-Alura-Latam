@@ -28,25 +28,15 @@
 
    <section class="encriptado">
     <div class="encriptacion">
-     <div class="box-container row">
+     <div class="box-container">
       <div class="box-left">
        <label class="input-title" for="texto">Texto a Encriptar</label>
        <input type="text" name="texto" id="inputText" placeholder="incluir el texto aqui " cols= "70" rows= "30" class="inputText" required ></textarea>
       </div>
       <div class="box-right">
        <label class="result-title" for="textoEncriptado">Resultado</label>
-        <div class="texto-muneco col-4">
-         <div class="aside" id="encryption-not-found">
-          <img src="./images/Muñeco.png" alt="boy-image" class="image muneco">
-          <span class="no-message text-aside"><strong>Ningún mensaje fue encontrado</strong></span>
-          <span class="ingresar-text text-aside">Ingresa el texto que desees encriptar o desencriptar</span>
-         </div>
-         <div class="aside hidden" id="encription-found">
-          <input type="text" class="campo-transparente outputText" id="resultado" name="write">
-          <span class=""><button type="button" class="padding encrypting" onclick="procesoCopiar()">Copiar</button>
-         </div>
-        </div>
- <!--            <textarea
+        <div class="texto">
+           <textarea
             name="textoEncriptado"
             id="outputText"
             placeholder="texto resultado "
@@ -54,17 +44,16 @@
             rows="10"
             class="outputText"
             readonly
-            ></textarea> -->
-            <button id="btn-copy" class="btn-copiar" onclick="copyToClipboard()">Copiar</button>
-      </div>
-     </div>
-        <div class="botones">
-          <p class="minusculas"> &#10071 El texto ingresado, debe incluir solo letras minúsculas e ir sin acentos</p>
-          <button id="encrypt" class="boton-codificar" onclick="encrypt()">Encriptar</button>
-              
-          <button id="decrypt" class="boton-desencriptar" onclick="decrypt()">Desencriptar</button>
-         </div>
+           ></textarea>
+          <button id="btn-copy" class="btn-copiar" onclick="copyToClipboard()">Copiar</button>
         </div>
+      </div>
+    </div>
+    <div class="botones">
+       <p class="minusculas"> &#10071 El texto ingresado, debe incluir solo letras minúsculas e ir sin acentos</p>
+       <button id="encrypt" class="boton-codificar" onclick="encrypt()">Encriptar</button>
+       <button id="decrypt" class="boton-desencriptar" onclick="decrypt()">Desencriptar</button>
+    </div>
    </main>  
 </body>
 <footer>
