@@ -129,6 +129,10 @@ div .box-right {
   border-color: #3b5998;
   border-width: 2px;
 }
+.button:hover {
+  background: darkorange;
+  transform: scale(1.2);
+}
 .minusculas {
   display: block;
   font-size: 14px;

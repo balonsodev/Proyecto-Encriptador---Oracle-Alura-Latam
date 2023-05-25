@@ -24,6 +24,7 @@ function encrypt() {
 }
 function resultado(result) {
   document.getElementById("outputText").innerHTML = result;
+  result = "";
 }
 function decrypt() {
   let input = document.getElementById("inputText").value;
@@ -38,4 +39,7 @@ function decrypt() {
   resultado(inputToDecode);
   //document.getElementById("outputText").innerHTML = inputToDecode;
   input = "";
+}
+if (document.getElementById("inputText").value === "") {
+  alert("Ingrese una palabra o frase");
 }
