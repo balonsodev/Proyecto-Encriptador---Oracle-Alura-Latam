@@ -179,7 +179,7 @@ div .box-right {
   height: 0px;
 }
 /* Footer */
-@import url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css);
+@import src: "./font-awesome-4.7.0/css/font-awesome.min.css";
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 
 h1 {
