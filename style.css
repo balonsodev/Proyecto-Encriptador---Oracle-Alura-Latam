@@ -32,7 +32,6 @@ h3 {
   align-items: center;
   color: #beb6b6;
   width: 100%;
-  vertical-align: middle;
 }
 h3 > img {
   width: 30px;
@@ -140,7 +139,6 @@ div .box-right {
   text-align: justify;
   border: none;
   font-style: normal;
-  vertical-align: top;
   background-color: transparent;
   color: white;
   columns: 50;
