@@ -70,7 +70,7 @@ h3 > img {
   left: 0;
   z-index: -1;
   width: 98%;
-  height: 65%;
+  height: 77%;
   background: linear-gradient(
     45deg,
     red,
@@ -235,6 +235,7 @@ div .box-right {
 }
 .social-container {
   height: 0px;
+  margin-top: 20px;
 }
 
 /* Footer */
