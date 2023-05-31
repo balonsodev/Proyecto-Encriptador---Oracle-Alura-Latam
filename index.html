@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./images/favicon_package_v0.16/favicon.ico" type="image/x-icon" />
-    
-    
-    
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -20,7 +17,7 @@
   <script src="./script.js"></script>
   
   <header>
-   <h3 class="principal-title" ><img src="./images/Logo.png" alt="Logo de Alura">Excriptador de Mensajes</h3>
+   <h3 class="principal-title" ><img src="./images/Logo.png" class="logo2" alt="Logo de Alura">Excriptador de Mensajes <img src="./images/candado.png" class="candado" alt="cmmvandado"</h3>
    
   </header>
   
@@ -35,7 +32,7 @@
        type="text"  
        name="texto"
        id="inputText"
-            placeholder="incluir el texto aqui "
+            placeholder="incluir el texto aquí "
             cols= "70"
             rows= "30"
             class="inputText"
@@ -54,25 +51,18 @@
             class="outputText"
             readonly
             ></textarea>
-            
-<!--               <div class="col-4 ">
-                <div class="aside" id="encription-not-found">
-                  <img src="./images/Muñeco.png" alt="boy-image" class="image">
-                  <span class="no-message text-aside"><strong>Ningún mensaje fue encontrado</strong></span>
-                  <span class="ingresar-text text-aside">Ingresa el texto que desees encriptar
-                    o desencriptar</span>
-                </div> -->
 
-            <button id="btn-copy" class="btn-copiar" onclick="copyToClipboard()">Copiar</button>
+            <button id="btn-copy" class="btnCopiar" onclick="copyToClipboard()">Copiar</button>
            </div>
         </div>
         <div class="botones">
           <p class="minusculas"> &#10071 El texto ingresado, debe incluir solo letras minúsculas e ir sin acentos</p>
-          <button id="encrypt" class="boton-codificar" onclick="encrypt()">Encriptar</button>
+          <button id="encrypt" class="boton-codificar" onclick="btnEncriptar()">Encriptar</button>
               
           <button id="decrypt" class="boton-desencriptar" onclick="decrypt()">Desencriptar</button>
          </div>
-        </div>
+    </div>
+   </section>
    </main>  
 </body>
 <footer>
