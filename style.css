@@ -1,3 +1,7 @@
+/* * {
+  outline: solid 2px red;
+} */
+
 header {
   padding: 10px;
   margin-top: 0px;
@@ -22,7 +26,7 @@ body {
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 35px;
   font-weight: bold;
   display: block;
   align-items: center;
@@ -31,31 +35,73 @@ h3 {
   vertical-align: middle;
 }
 h3 > img {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   vertical-align: middle;
   margin: -9px 10px 0 0;
 }
-.encriptado {
-  width: 100%;
-  background: rgba(0, 0, 0, 0.557);
-  margin: 10px;
-  border: 2px solid black;
-  border-radius: 15px;
-  padding: 10px;
-  height: 655px;
-}
 .principal-title {
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   width: 100%;
 }
-.encriptacion {
-  margin-top: 10px;
-  width: 100%;
-  height: 645px;
+
+.candado {
+  width: 40px;
+  height: 40px;
+  vertical-align: center;
 }
+
+/* inicio del blur multicolor del fondo */
+.encriptado {
+  background: black;
+  border: none;
+  border-radius: 15px;
+  padding: 16px 32px;
+  margin: 10px;
+  margin-top: 10px;
+  width: 94%;
+  height: 665px;
+}
+.encriptado::before {
+  content: " ";
+  position: absolute;
+  top: 43px;
+  left: 0;
+  z-index: -1;
+  width: 98%;
+  height: 65%;
+  background: linear-gradient(
+    45deg,
+    red,
+    blue,
+    deeppink,
+    red,
+    blue,
+    deeppink,
+    red,
+    blue,
+    deeppink
+  );
+  background-size: 750%;
+  border-radius: 15px;
+  filter: blur(10px);
+  animation: glowing 20s linear infinite;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 375% 0;
+  }
+  100% {
+    background-position: 0% 0;
+  }
+}
+/* Fin del blur multicolor del fondo */
+
 .box-container {
   width: 100%;
   height: 515px;
@@ -70,16 +116,16 @@ h3 > img {
 }
 
 div .box-left {
-  width: 50%;
+  width: 60%;
   margin: 0 0 0 0;
-  height: 470px;
+  height: 495px;
 }
 
 div .box-right {
   margin: -10px 0 0 5%;
   padding: 10px;
   width: 40%;
-  height: 500px;
+  height: 495px;
   vertical-align: top;
   box-shadow: 0 24px 32px -8px black;
   display: grid;
@@ -87,8 +133,8 @@ div .box-right {
 }
 
 .inputText {
-  width: 93%;
-  height: 440px;
+  width: 96%;
+  height: 460px;
   display: block;
   font-size: 16px;
   text-align: justify;
@@ -98,6 +144,8 @@ div .box-right {
   background-color: transparent;
   color: white;
   columns: 50;
+  background-color: #141313;
+  border-radius: 20px;
 }
 
 .outputText {
@@ -110,12 +158,16 @@ div .box-right {
   font-style: italic;
   box-shadow: 0 24px 32px -8px black;
   margin: 10px 0 0 0px;
-  border-radius: 32px;
+  border-radius: 20px;
   padding: 10px;
   display: inline-block;
+  background-image: url("./images/candado.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
 }
 
-.btn-copiar {
+.btnCopiar {
   font-size: 14px;
   text-align: center;
   width: 110px;
@@ -128,25 +180,30 @@ div .box-right {
   border: solid;
   border-color: #3b5998;
   border-width: 2px;
+  cursor: pointer;
 }
+
 .button:hover {
   background: darkorange;
   transform: scale(1.2);
 }
+
 .minusculas {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   padding: 20px;
   margin: auto;
   text-align: center;
   color: #ffffff;
 }
+
 .botones {
   text-align: center;
   margin: 0px;
   width: 100%;
 }
+
 .boton-codificar {
   width: 200px;
   height: 45px;
@@ -160,7 +217,9 @@ div .box-right {
   border-color: #3b5998;
   font-weight: bold;
   border-width: 2px;
+  cursor: pointer;
 }
+
 .boton-desencriptar {
   width: 200px;
   height: 45px;
@@ -174,12 +233,15 @@ div .box-right {
   border-color: #3b5998;
   border: solid;
   border-width: 2px;
+  cursor: pointer;
 }
 .social-container {
   height: 0px;
 }
+
 /* Footer */
-@import src: "./font-awesome-4.7.0/css/font-awesome.min.css";
+
+@import url("./font-awesome-4.7.0/css/font-awesome.min.css");
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 
 h1 {
@@ -333,11 +395,29 @@ h1 {
   .box-container,
   .encriptacion {
     margin-left: 0;
+    margin-right: 50px;
     width: 370px;
     margin-bottom: 20px;
     display: inline-table;
     padding: 0;
   }
+  .encriptado {
+    background: black;
+    border-radius: 15px;
+    margin-left: 15px;
+  }
+
+  .encriptacion {
+    background: black;
+  }
+  .encriptado::before {
+    height: 1125px;
+    position: absolute;
+    top: 7px;
+    width: 120%;
+    margin-left: -15px;
+  }
+
   .box-container {
     height: 940px;
   }
@@ -382,6 +462,7 @@ h1 {
     position: static;
     top: 0px;
     height: 95px;
+    margin: auto;
   }
   #social-plataforms > h1 {
     padding: 4px;
