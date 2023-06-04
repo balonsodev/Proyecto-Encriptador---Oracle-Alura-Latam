@@ -21,7 +21,7 @@ main {
 body {
   font-size: 18px;
   width: 100%;
-  background-image: url(./images/background.png);
+  background-image: url("./images/background.png");
   background-repeat: round;
 }
 
@@ -70,7 +70,7 @@ h3 > img {
   left: 0;
   z-index: -1;
   width: 98%;
-  height: 77%;
+  height: 62%;
   background: linear-gradient(
     45deg,
     red,
@@ -159,7 +159,7 @@ div .box-right {
   border-radius: 20px;
   padding: 10px;
   display: inline-block;
-  background-image: url("./images/candado.png");
+  background-image: url(./images/candado.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 75%;

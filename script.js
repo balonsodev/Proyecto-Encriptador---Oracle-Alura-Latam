@@ -1,14 +1,14 @@
 const inputText = document.getElementById("inputText");
 const outputText = document.getElementById("outputText");
 const btncopiar = document.querySelector(".btnCopiar");
-document.getElementById("btn-copy").style.display = "none";
+//document.getElementById("btn-copy").style.display = "none";
 
 function btnEncriptar() {
   console.log("btnEncriptar ejecutado");
   let encriptValue = document.getElementById("inputText").value;
 
   if (!validarTexto()) {
-    const textoEncriptado = encrypt(encriptValue);
+    const resultField = encrypt(encriptValue);
     document.getElementById("outputText").style.backgroundImage = "none";
     document.getElementById("btn-copy").style.display = "block";
     resultField.value = "";
@@ -58,9 +58,6 @@ function decrypt() {
   console.log(inputToDecode);
   resultado(inputToDecode);
   input = "";
-}
-if (document.getElementById("inputText").value === "") {
-  alert("Ingrese una palabra o frase");
 }
 
 function copyToClipboard() {
